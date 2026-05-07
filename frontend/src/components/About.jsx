@@ -1,10 +1,12 @@
 // src/components/About.jsx
 import SectionHeader from './SectionHeader'  
+import useIsMobile from '../hooks/useIsMobile'
 
 const sectionStyle = { padding: '5rem 2rem', maxWidth: 960, margin: '0 auto' }
 const parrafo = { color: '#666', marginBottom: '1rem', fontWeight: 300, lineHeight: 1.8 }
 
 function About() {
+  const isMobile = useIsMobile()
   const stats = [
     { num: '3+',  label: 'Años de experiencia' },
     { num: '20+', label: 'Proyectos entregados' },
@@ -16,7 +18,7 @@ function About() {
     <section id="sobre-mi" style={sectionStyle}>
       <SectionHeader numero="01" titulo="Sobre mí" />
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: '3rem' }}>
         <div>
           <p style={parrafo}>
             Hola, soy <strong style={{ color: '#f0f0f0' }}>Francisco Alfonso Batalla Barrios</strong>,

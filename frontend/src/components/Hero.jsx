@@ -37,7 +37,7 @@ function Hero() {
         desde APIs robustas hasta interfaces que la gente disfruta usar.
       </p>
 
-      <div style={{ display: 'flex', gap: '1rem' }}>
+      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
         <a href="#proyectos" style={btnPrimary}>Ver proyectos</a>
         <a href="#sobre-mi" style={btnOutline}>Sobre mí</a>
       </div>

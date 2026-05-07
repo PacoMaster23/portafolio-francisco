@@ -1,0 +1,25 @@
+/* src/index.css */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0a0a0a;
+  --bg2: #111111;
+  --border: #2a2a2a;
+  --text: #f0f0f0;
+  --muted: #666666;
+  --accent: #e8ff6b;
+  --accent2: #6bffce;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.7;
+}

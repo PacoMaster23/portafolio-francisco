@@ -7,19 +7,20 @@ function Skills() {
   const categorias = [
     {
       titulo: 'Frontend',
-      skills: ['React / Next.js', 'JavaScript ES2024', 'HTML5 / CSS3', 'TypeScript', 'Tailwind CSS']
+      skills: ['React / Next.js', 'JavaScript ','XML / JSON','JQuery', 'HTML5 / CSS3', 'TypeScript', 'Razor Pages', 'Bootstrap' ]
     },
     {
       titulo: 'Backend',
-      skills: ['Node.js / Express', 'REST APIs', 'GraphQL', 'PostgreSQL', 'MongoDB']
+      skills: ['Node.js / Express', 'REST APIs','SQL Server','C#', ".NET Framework", 
+        'ADO.NET',"Entity Framework", 'ASP.NET Core' , 'Web API', 'Dependency Injection', 'POO','LINQ', ]
     },
-    {
-      titulo: 'DevOps',
-      skills: ['Docker', 'Git / GitHub', 'AWS / Vercel', 'CI/CD', 'Linux / Bash']
-    },
+    // {
+    //   titulo: 'DevOps',
+    //   skills: ['Docker', 'Git / GitHub', 'AWS / Vercel', 'CI/CD', 'Linux / Bash']
+    // },
     {
       titulo: 'Metodologías',
-      skills: ['Scrum / Agile', 'TDD', 'Clean Architecture', 'Code Review', 'Pair Programming']
+      skills: ['Scrum / Agile', 'Clean Architecture', 'MVC', 'HttpClient', 'JWT', ]
     },
   ]
 

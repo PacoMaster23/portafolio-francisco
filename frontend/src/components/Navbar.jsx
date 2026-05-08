@@ -24,10 +24,26 @@ function Navbar() {
             <a href="#sobre-mi" style={linkStyle}>Sobre mí</a>
             <a href="#habilidades" style={linkStyle}>Skills</a>
             <a href="#proyectos" style={linkStyle}>Proyectos</a>
+            <a href="/Francisco_Batalla_NET_Developer.pdf"
+              download="CV-Francisco-Batalla.pdf"
+              style={{
+                fontFamily: 'monospace', fontSize: 11,
+                letterSpacing: 2, textTransform: 'uppercase',
+                padding: '.4rem 1rem',
+                border: '1px solid #e8ff6b',
+                color: '#e8ff6b',
+                textDecoration: 'none',
+                borderRadius: 2,
+                transition: 'all .2s'
+              }}
+            >
+              CV ↓
+            </a>
+
           </div>
         )}
 
-        {/* Móvil — botón hamburguesa */}
+        {/* Móvil */}
         {isMobile && (
           <button
             onClick={() => setMenuOpen(!menuOpen)}
@@ -52,6 +68,12 @@ function Navbar() {
           <a href="#sobre-mi" onClick={() => setMenuOpen(false)} style={linkStyle}>Sobre mí</a>
           <a href="#habilidades" onClick={() => setMenuOpen(false)} style={linkStyle}>Skills</a>
           <a href="#proyectos" onClick={() => setMenuOpen(false)} style={linkStyle}>Proyectos</a>
+          <a href="/Francisco_Batalla_NET_Developer.pdf"
+            download="CV-Francisco-Batalla.pdf"
+            style={{ ...linkStyle, color: '#e8ff6b' }}
+          >
+
+          </a>
         </div>
       )}
     </nav>

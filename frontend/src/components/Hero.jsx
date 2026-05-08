@@ -24,8 +24,8 @@ function Hero() {
         fontFamily: 'monospace', fontSize: 'clamp(2.5rem, 6vw, 4.5rem)',
         fontWeight: 700, lineHeight: 1.1, marginBottom: '1.5rem'
       }}>
-         Francisco<br />{/*Alfonso<br /> */}
-        <span style={{ color: '#e8ff6b' }}>Batalla.</span> 
+        Francisco<br />{/*Alfonso<br /> */}
+        <span style={{ color: '#e8ff6b' }}>Batalla.</span>
         {/* <span style={{ color: '#e8ff6b' }}>Barrios.</span> */}
       </h1>
 
@@ -40,6 +40,11 @@ function Hero() {
       <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
         <a href="#proyectos" style={btnPrimary}>Ver proyectos</a>
         <a href="#sobre-mi" style={btnOutline}>Sobre mí</a>
+        <a href="/Francisco_Batalla_NET_Developer.pdf"
+          download="CV-Francisco-Batalla.pdf"
+          style={btnOutline}>
+          Descargar CV ↓
+        </a>
       </div>
 
     </section>

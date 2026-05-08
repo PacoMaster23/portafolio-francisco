@@ -8,9 +8,9 @@ const parrafo = { color: '#666', marginBottom: '1rem', fontWeight: 300, lineHeig
 function About() {
   const isMobile = useIsMobile()
   const stats = [
-    { num: '3+',  label: 'Años de experiencia' },
-    { num: '20+', label: 'Proyectos entregados' },
-    { num: '10+', label: 'Clientes satisfechos' },
+    { num: '2+',  label: 'Años de experiencia' },
+    { num: '4+', label: 'Proyectos entregados' },
+    { num: '3+', label: 'Clientes satisfechos' },
     { num: '∞',   label: 'Café consumido' },
   ]
 

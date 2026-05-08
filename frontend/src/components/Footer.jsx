@@ -20,7 +20,7 @@ function Footer() {
         {[
           {label: 'GitHub', url: 'https://github.com/PacoMaster23'},
           {label: 'LinkedIn', url: 'https://www.linkedin.com/in/francisco-dev23/'},
-          {label: 'Email', url: 'mailto:francisco@batalla.dev'}
+          
         ].map(({label, url}) => (
           <a key={label} href={url} style={{
             fontFamily: 'monospace', fontSize: 11, color: '#666',

@@ -1,4 +1,5 @@
-// src/components/Hero.jsx
+import Animatedsection  from './AnimatedSection'
+
 function Hero() {
   return (
     <section style={{
@@ -46,7 +47,7 @@ function Hero() {
           Descargar CV ↓
         </a>
       </div>
-
+      <animatedsection />
     </section>
   )
 }

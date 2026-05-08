@@ -1,6 +1,10 @@
 // src/components/Contact.jsx
 import { useState } from 'react'
 
+const API_URL = import.meta.env.PROD
+  ? 'portfolio-batalla-francisco.up.railway.app'
+  : 'http://localhost:3001';
+  
 function Contact() {
   const [form, setForm]       = useState({ nombre: '', email: '', mensaje: '' })
   const [estado, setEstado]   = useState('idle') // idle | cargando | ok | error
@@ -15,7 +19,7 @@ function Contact() {
     setEstado('cargando')
 
     try {
-      const res = await fetch('http://localhost:3001/api/contacto', {
+      const res = await fetch(`${API_URL}/api/contacto`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form)
@@ -35,6 +39,7 @@ function Contact() {
       setRespuesta('No se pudo conectar con el servidor.')
     }
   }
+  
 
   return (
     <section id="contacto" style={sectionStyle}>

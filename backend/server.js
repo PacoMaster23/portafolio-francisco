@@ -9,7 +9,9 @@ const app  = express()
 const PORT = process.env.PORT || 3001
 
 // Middlewares — se ejecutan en cada petición antes de llegar a las rutas
-app.use(cors({ origin: 'http://localhost:5173' }))
+app.use(cors({ origin: ['http://localhost:5173',
+  'https://portfolio-francisco-batalla.vercel.app'
+ ]}))
 app.use(express.json()) // permite leer JSON en el body
 
 // Rutas
